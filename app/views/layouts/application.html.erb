@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  test change
+    <%= yield %>
+    <div class="footer-padding"></div>
+
+  </body>
+  <div class="footer"> <div class="p-footer"><a href="http://localhost:3000/static_pages/about">Learn more</a></div>
+    <div>Design by Cameron A. Pickerill-Trinitapoli</div></div>
+</html>
