@@ -1,0 +1,1447 @@
+Started GET "/users" for 127.0.0.1 at 2017-10-14 11:25:17 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-14 11:25:19 -0700
+Processing by ApplicationController#intro as HTML
+Completed 500 Internal Server Error in 729ms
+
+
+  
+LoadError (Could not load 'active_record/connection_adapters/postgresql_adapter'. Make sure that the adapter in config/database.yml is valid. If you use an adapter other than 'mysql2', 'postgresql' or 'sqlite3' add the necessary adapter gem to the Gemfile.):
+  
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+pg-0.18.4-x64 (mingw32) lib/pg.rb:14:in `rescue in <top (required)>'
+pg-0.18.4-x64 (mingw32) lib/pg.rb:3:in `<top (required)>'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:3:in `<top (required)>'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.2) lib/active_record/connection_adapters/connection_specification.rb:186:in `spec'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.2) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:45:in `instance_eval'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:45:in `execute_hook'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:51:in `each'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+activerecord (5.1.2) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.2) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:40:in `append_info_to_payload'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:36:in `ensure in block in process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:36:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-14 11:25:27 -0700
+Processing by ApplicationController#intro as HTML
+Completed 500 Internal Server Error in 47ms
+
+
+  
+LoadError (Could not load 'active_record/connection_adapters/postgresql_adapter'. Make sure that the adapter in config/database.yml is valid. If you use an adapter other than 'mysql2', 'postgresql' or 'sqlite3' add the necessary adapter gem to the Gemfile.):
+  
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+pg-0.18.4-x64 (mingw32) lib/pg.rb:14:in `rescue in <top (required)>'
+pg-0.18.4-x64 (mingw32) lib/pg.rb:3:in `<top (required)>'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.2) lib/active_record/connection_adapters/postgresql_adapter.rb:3:in `<top (required)>'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.2) lib/active_record/connection_adapters/connection_specification.rb:186:in `spec'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.2) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:45:in `instance_eval'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:45:in `execute_hook'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:51:in `each'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+activerecord (5.1.2) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.2) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:40:in `append_info_to_payload'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:36:in `ensure in block in process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:36:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-14 11:57:38 -0700
+Processing by ApplicationController#intro as HTML
+Completed 500 Internal Server Error in 289ms
+
+
+  
+Gem::LoadError (Specified 'postgresql' for database adapter, but the gem is not loaded. Add `gem 'pg'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  
+activerecord (5.1.2) lib/active_record/connection_adapters/connection_specification.rb:188:in `rescue in spec'
+activerecord (5.1.2) lib/active_record/connection_adapters/connection_specification.rb:185:in `spec'
+activerecord (5.1.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:880:in `establish_connection'
+activerecord (5.1.2) lib/active_record/connection_handling.rb:58:in `establish_connection'
+activerecord (5.1.2) lib/active_record/railtie.rb:124:in `block (2 levels) in <class:Railtie>'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:45:in `instance_eval'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:45:in `execute_hook'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:52:in `block in run_load_hooks'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:51:in `each'
+activesupport (5.1.2) lib/active_support/lazy_load_hooks.rb:51:in `run_load_hooks'
+activerecord (5.1.2) lib/active_record/base.rb:326:in `<module:ActiveRecord>'
+activerecord (5.1.2) lib/active_record/base.rb:25:in `<top (required)>'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `block in require'
+activesupport (5.1.2) lib/active_support/dependencies.rb:258:in `load_dependency'
+activesupport (5.1.2) lib/active_support/dependencies.rb:292:in `require'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:40:in `append_info_to_payload'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:36:in `ensure in block in process_action'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:36:in `block in process_action'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.2) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.2) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.2) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.2) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.2) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.2) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:46:in `block in serve'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.2) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.2) lib/action_dispatch/routing/route_set.rb:832:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.2) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.2) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-14 11:59:03 -0700
+Processing by ApplicationController#intro as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 504ms (Views: 19.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-14 11:59:06 -0700
+Processing by ApplicationController#intro as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-10-14 12:01:48 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/intro" for 127.0.0.1 at 2017-10-14 12:03:08 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/intro"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-14 12:03:15 -0700
+Processing by ApplicationController#intro as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 363ms (Views: 1.7ms)
+
+
+Started GET "/static_pages" for 127.0.0.1 at 2017-10-14 12:03:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/static_pages/help" for 127.0.0.1 at 2017-10-14 12:03:30 -0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8365ms (Views: 8348.6ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-14 12:04:08 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 138ms (Views: 121.2ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-14 12:10:07 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 6445ms (Views: 6096.2ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-14 12:11:03 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (194.5ms)
+Completed 500 Internal Server Error in 623ms
+
+
+  
+ActionView::Template::Error (The asset "homestyle.css" is not present in the asset pipeline.):
+    1: <style>
+    2:   <%= stylesheet_link_tag "homestyle" %>
+    3:   .main-header {
+    4:   }
+    5:   .sub-header {
+  
+app/views/static_pages/home.html.erb:2:in `_app_views_static_pages_home_html_erb__3582883_46888600'
+Started POST "/__web_console/repl_sessions/ec7d44b16e920fb4bb15f6248f8e91da/trace" for 127.0.0.1 at 2017-10-14 12:13:11 -0700
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-14 12:13:50 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (122.0ms)
+Completed 500 Internal Server Error in 562ms
+
+
+  
+ActionView::Template::Error (The asset "homestyle.css" is not present in the asset pipeline.):
+    1: <style>
+    2:   <%= stylesheet_link_tag "homestyle" %>
+    3:   .main-header {
+    4:   }
+    5:   .sub-header {
+  
+app/views/static_pages/home.html.erb:2:in `_app_views_static_pages_home_html_erb__1970469911_36337320'
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-14 12:15:51 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (166.0ms)
+Completed 500 Internal Server Error in 635ms
+
+
+  
+ActionView::Template::Error (The asset "homestyle.css" is not present in the asset pipeline.):
+    1: <style>
+    2:   <%= stylesheet_link_tag "homestyle" %>
+    3:   .main-header {
+    4:   }
+    5:   .sub-header {
+  
+app/views/static_pages/home.html.erb:2:in `_app_views_static_pages_home_html_erb__1664951992_33087640'
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-14 12:25:42 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (98.5ms)
+Completed 500 Internal Server Error in 479ms
+
+
+  
+ActionView::Template::Error (The asset "homestyle.css" is not present in the asset pipeline.):
+    1: <style>
+    2:   <%= stylesheet_link_tag "homestyle" %>
+    3:   .main-header {
+    4:   }
+    5:   .sub-header {
+  
+app/views/static_pages/home.html.erb:2:in `_app_views_static_pages_home_html_erb__2004422544_46239660'
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-14 12:33:32 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5705ms (Views: 5403.2ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-14 12:33:48 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 250ms (Views: 201.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 23:24:32 -0700
+Processing by ApplicationController#intro as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 245ms (Views: 4.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-18 23:24:37 -0700
+Processing by ApplicationController#intro as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2017-10-18 23:24:45 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-18 23:25:13 -0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.erb within layouts/application
+  Rendered static_pages/about.erb within layouts/application (0.0ms)
+Completed 200 OK in 4764ms (Views: 4749.6ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-18 23:25:24 -0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.erb within layouts/application
+  Rendered static_pages/about.erb within layouts/application (0.5ms)
+Completed 200 OK in 109ms (Views: 95.0ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-18 23:26:30 -0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.erb within layouts/application
+  Rendered static_pages/about.erb within layouts/application (1.0ms)
+Completed 200 OK in 5004ms (Views: 4748.3ms)
+
+
+Started GET "/static_pages/intro" for 127.0.0.1 at 2017-10-18 23:27:02 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/intro"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-18 23:27:39 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 69.0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-18 23:29:18 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 4976ms (Views: 4714.4ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-18 23:29:40 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 65.7ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-18 23:41:19 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4973ms (Views: 4738.6ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-19 00:01:37 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 5401ms (Views: 5131.9ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-19 00:02:00 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 118ms (Views: 104.0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-19 00:08:57 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 101ms (Views: 87.3ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-19 00:08:59 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 70.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 01:50:51 -0700
+Processing by ApplicationController#intro as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 258ms (Views: 4.0ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 01:51:03 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17042ms (Views: 17028.1ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 01:53:28 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 01:53:33 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 324ms (Views: 272.7ms)
+
+
+Completed 200 OK in 15786ms (Views: 15486.4ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 01:55:42 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 4991ms (Views: 4723.5ms)
+
+
+Started GET "/static_pages/intro" for 127.0.0.1 at 2017-10-20 01:56:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/static_pages/intro"):
+  
+actionpack (5.1.2) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.2) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.2) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.2) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-20 01:56:27 -0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.erb within layouts/application
+  Rendered static_pages/about.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 72.5ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 01:56:58 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 82ms (Views: 68.1ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-20 01:57:00 -0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.erb within layouts/application
+  Rendered static_pages/about.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 74.5ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 15:50:38 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 15:50:41 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8791ms (Views: 8512.4ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 15:50:58 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 536ms (Views: 485.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 15:50:59 -0700
+Processing by ApplicationController#intro as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 61ms (Views: 60.8ms)
+
+
+Completed 200 OK in 18257ms (Views: 18242.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 15:51:00 -0700
+Processing by ApplicationController#intro as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 0ms (Views: 0.4ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:51:02 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 103ms (Views: 78.5ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:51:57 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 83ms (Views: 69.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:52:10 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 69.2ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:52:13 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 79ms (Views: 66.1ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:52:24 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 69.5ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:52:41 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 80ms (Views: 66.1ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:52:45 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 85ms (Views: 71.5ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:52:53 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 67.6ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:53:09 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 79ms (Views: 65.7ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:53:12 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 81ms (Views: 67.8ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:55:08 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 81ms (Views: 67.6ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:55:45 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 72.9ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:56:26 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 85ms (Views: 69.3ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:57:00 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 68.7ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:57:09 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 78.2ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:58:17 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 114ms (Views: 94.8ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:58:19 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 84ms (Views: 69.8ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:58:25 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 76.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:58:26 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 73.4ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:58:30 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 85ms (Views: 71.3ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:59:09 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 180ms (Views: 160.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:59:10 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 76.7ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:59:11 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 85ms (Views: 70.8ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:59:13 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 65.3ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 15:59:48 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 140ms (Views: 126.6ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:00:00 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 129ms (Views: 114.5ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 16:00:06 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 66.3ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:00:28 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 127.1ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:00:40 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:00:46 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 134ms (Views: 118.1ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:16:41 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 86.3ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:16:43 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 72.0ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:16:44 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 86ms (Views: 71.8ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:41:41 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 171ms (Views: 156.9ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:42:53 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 158ms (Views: 143.7ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 16:42:59 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 86ms (Views: 72.2ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-20 16:44:05 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 161ms (Views: 147.2ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-20 16:44:16 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 99ms (Views: 82.0ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-20 16:44:21 -0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 73.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 16:44:56 -0700
+Processing by ApplicationController#intro as HTML
+  Rendering html template
+  Rendered html template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 16:46:56 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 89ms (Views: 75.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 16:57:32 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 5315ms (Views: 5018.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 16:58:16 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 133ms (Views: 116.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:22:57 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 143ms (Views: 124.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:23:00 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 92ms (Views: 74.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:23:19 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 89ms (Views: 75.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:23:56 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 82ms (Views: 69.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:24:01 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 65.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:24:27 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 89ms (Views: 72.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:25:23 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 134ms (Views: 120.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:25:35 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 155ms (Views: 138.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:25:47 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 157ms (Views: 138.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:26:16 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 135ms (Views: 120.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:26:22 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 67.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:26:30 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 140ms (Views: 125.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:27:09 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 146ms (Views: 131.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:27:18 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 158ms (Views: 144.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:27:21 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 89ms (Views: 75.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:27:25 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 148ms (Views: 133.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:27:29 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 83ms (Views: 68.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:27:33 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 145ms (Views: 129.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:27:40 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 151ms (Views: 136.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:28:13 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 131ms (Views: 117.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:28:15 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 84ms (Views: 71.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:28:21 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 141ms (Views: 127.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:29:02 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 173ms (Views: 158.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:30:29 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 125ms (Views: 111.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:30:42 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 145ms (Views: 127.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:30:45 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 87ms (Views: 72.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:30:51 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 127ms (Views: 111.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:31:24 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 131ms (Views: 117.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:31:38 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 127ms (Views: 113.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:31:41 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 87ms (Views: 73.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:32:30 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 130ms (Views: 115.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:32:36 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 155ms (Views: 135.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:32:46 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 141ms (Views: 126.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:33:00 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 129ms (Views: 115.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:33:46 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 120ms
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  height: auto%": expected expression (e.g. 1px, bold), was ";"):
+     5:   <head>
+     6:     <title>Showcase App</title>
+     7:     <%= csrf_meta_tags %>
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/static_pages.scss:19
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1126122634_101852420'
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:33:50 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 130ms (Views: 116.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:34:05 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 88ms (Views: 71.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:34:53 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 141ms (Views: 127.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:36:03 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 153ms (Views: 137.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-20 17:49:34 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 158ms (Views: 143.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-21 16:22:39 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+Started GET "/" for 127.0.0.1 at 2017-10-21 16:22:41 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Started GET "/" for 127.0.0.1 at 2017-10-21 16:22:42 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 11593ms (Views: 11347.5ms)
+
+
+Completed 200 OK in 21137ms (Views: 21085.5ms)
+
+
+Completed 200 OK in 20190ms (Views: 20096.2ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-21 16:23:13 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 81ms (Views: 66.6ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-21 16:23:20 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 79ms (Views: 65.9ms)
+
+
+Started GET "/static_pages/home" for 127.0.0.1 at 2017-10-21 18:06:45 -0700
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 14725ms (Views: 13795.3ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2017-10-21 18:07:17 -0700
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 118ms (Views: 86.3ms)
+
+
+Started GET "/static_pages/help" for 127.0.0.1 at 2017-10-21 18:07:22 -0700
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 111ms (Views: 96.4ms)
+
+
+Started GET "/static_pages/contact" for 127.0.0.1 at 2017-10-21 18:07:28 -0700
+Processing by StaticPagesController#contact as HTML
+  Rendering static_pages/contact.html.erb within layouts/application
+  Rendered static_pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 87ms (Views: 72.5ms)
+
+
